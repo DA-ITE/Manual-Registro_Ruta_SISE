@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#241F21" />
+<title>Manual rápido · Ruta SISE</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sise-red:#FF0E49;--sise-dark:#241F21;--sise-dark-2:#2D2426;--sise-wine:#6B1E36;
+  --sise-white:#fff;--sise-soft:#FFF1F5;--sise-paper:#F7F4F4;--sise-muted:#756d71;
+  --sise-text:#171416;--line:#e6dfe2;--green:#009860;--amber:#b7791f;--blue:#0075B0;
+  --shadow:0 16px 40px rgba(36,31,33,.12);--radius:18px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f2f3;color:var(--sise-text);font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif;font-size:18px}
+button,a{font:inherit}.wrap{max-width:1120px;margin:0 auto;padding:24px}.hero{position:relative;overflow:hidden;background:linear-gradient(110deg,var(--sise-dark),#3b232b 60%,#6b1e36);color:#fff;border-radius:24px;padding:32px;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;right:-80px;top:-100px;width:310px;height:310px;border:1px solid rgba(255,255,255,.17);border-radius:50%}.hero:before{content:"";position:absolute;right:90px;bottom:-170px;width:250px;height:250px;background:rgba(255,14,73,.15);border-radius:50%}
+.logo{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--sise-red);border-radius:10px;padding:10px 16px;position:relative;z-index:1}.logo strong{font-size:30px;line-height:1;font-weight:900}.logo span{font-size:13px;color:var(--sise-dark);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.eyebrow{margin-top:28px;color:#ff9ab4;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:14px}.hero h1{font-size:clamp(46px,7vw,76px);line-height:.9;margin:8px 0 12px;font-weight:900;text-transform:uppercase;position:relative;z-index:1}.hero p{max-width:720px;margin:0;color:#eee5e8;font-size:22px;line-height:1.35;position:relative;z-index:1}.quick{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;position:relative;z-index:1}.pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 12px;font-size:15px;font-weight:700}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin:22px 0}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(36,31,33,.05)}.card h2,.card h3{margin:0 0 8px}.card p{margin:0;color:#625b5f;line-height:1.45}.callout{background:var(--sise-soft);border-left:6px solid var(--sise-red);border-radius:12px;padding:18px 20px}.callout strong{display:block;font-size:22px;margin-bottom:4px}.identity-alert{margin:22px 0;background:#fff5f7;border:2px solid var(--sise-red);border-radius:16px;padding:18px 20px}.identity-alert h2{margin:0 0 6px;font-size:30px;color:var(--sise-red)}.identity-alert p{margin:5px 0;color:#51494d;line-height:1.45}.identity-alert .mini{font-size:15px;color:#756d71}
+.route{margin-top:24px}.route-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}.route-title h2{font-size:38px;margin:0}.route-title p{margin:0;color:#6c6468}.steps{display:grid;gap:14px}.step{display:grid;grid-template-columns:68px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;position:relative}.num{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--sise-dark);color:#fff;font-size:24px;font-weight:900;border:5px solid #ffe5ed}.step h3{font-size:27px;margin:0 0 6px}.step p{margin:0;color:#625b5f;line-height:1.42}.tips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.tag{font-size:14px;font-weight:800;border-radius:999px;padding:6px 9px;background:#f3f4f6;color:#374151}.tag.red{background:#fff0f4;color:#a30e37}.tag.green{background:#ebf8f3;color:#087653}.tag.blue{background:#eef7fb;color:#006b9e}
+.note{margin-top:12px;padding:12px 14px;border-radius:10px;background:#faf7f8;border:1px dashed #ddcfd4;color:#574f53;font-size:16px}.note b{color:var(--sise-red)}
+.faq{margin-top:26px;background:#fff;border-radius:18px;border:1px solid var(--line);overflow:hidden}.faq h2{padding:20px 22px;margin:0;font-size:34px;border-bottom:1px solid var(--line)}details{border-bottom:1px solid #eee7ea}details:last-child{border-bottom:0}summary{cursor:pointer;list-style:none;padding:17px 22px;font-weight:800;font-size:21px;display:flex;align-items:center;justify-content:space-between}summary::-webkit-details-marker{display:none}summary:after{content:'+';color:var(--sise-red);font-size:27px}details[open] summary:after{content:'−'}details p{padding:0 22px 18px;margin:0;color:#625b5f;line-height:1.45}
+.final{margin:26px 0;background:var(--sise-red);color:#fff;border-radius:20px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.final h2{font-size:34px;margin:0 0 5px}.final p{margin:0;color:#ffe6ee}.btn{border:0;background:#fff;color:var(--sise-red);border-radius:12px;padding:12px 18px;font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.footer{padding:0 4px 24px;color:#786f73;font-size:14px;text-align:center}
+@media(max-width:760px){.wrap{padding:14px}.hero{padding:24px}.intro{grid-template-columns:1fr}.step{grid-template-columns:54px 1fr}.num{width:46px;height:46px;font-size:20px}.final{grid-template-columns:1fr}.route-title{display:block}.route-title p{margin-top:5px}.hero p{font-size:19px}}
+@media print{body{background:#fff}.wrap{max-width:none;padding:0}.hero,.card,.step,.faq,.final{box-shadow:none}.btn{display:none}.faq details{display:block}.faq details p{display:block}.hero{border-radius:0}.footer{padding-top:10px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div class="logo"><strong>SISE»</strong><span>Instituto Superior</span></div>
+    <div class="eyebrow">Manual rápido de usuario</div>
+    <h1>Ruta SISE</h1>
+    <p>Guía sencilla para registrar visitas, hallazgos, voces y evidencias desde celular o computadora.</p>
+    <div class="quick">
+      <span class="pill">✓ Registro paso a paso</span><span class="pill">✓ Evidencias</span><span class="pill">✓ Derivación</span><span class="pill">✓ Historial</span>
+    </div>
+  </section>
+
+  <section class="intro">
+    <article class="card">
+      <h2>¿Para qué sirve Ruta SISE?</h2>
+      <p>Permite registrar de forma ordenada lo observado durante una visita: clases, sede, voz del estudiante, voz del docente u otros hallazgos. También permite adjuntar evidencias y realizar seguimiento cuando corresponde.</p>
+    </article>
+    <aside class="callout">
+      <strong>Antes de empezar</strong>
+      Ten conexión a internet cuando sea posible y permite el acceso al micrófono o cámara solo cuando vayas a utilizarlos.
+    </aside>
+  </section>
+
+  <section class="identity-alert">
+    <h2>Usa siempre los mismos datos de identificación</h2>
+    <p>Para que <strong>Mi historial</strong> muestre todos tus registros anteriores, debes ingresar siempre con el <strong>mismo correo, nombre y apellidos</strong>.</p>
+    <p class="mini">Ejemplo: si hoy ingresas como “Ana Pérez” con “ana.perez@sise.edu.pe”, utiliza exactamente esos mismos datos en tus siguientes visitas.</p>
+  </section>
+
+  <section class="route">
+    <div class="route-title"><div><h2>Ruta de registro</h2><p>Sigue estos pasos en orden.</p></div><span class="tag red">6 pasos</span></div>
+    <div class="steps">
+      <article class="step"><div class="num">01</div><div><h3>Identifícate siempre de la misma forma</h3><p>Completa tus datos de visita: nombre, apellidos, correo, área, rol, sede y modalidad. <strong>Usa siempre el mismo correo, nombre y apellidos en cada ingreso.</strong> Así Ruta SISE podrá reconocer tu perfil y mostrarte todo tu historial de registros.</p><div class="tips"><span class="tag">Campos obligatorios</span><span class="tag blue">Mismo correo</span><span class="tag green">Mismo nombre y apellidos</span></div><div class="note"><b>Muy importante:</b> si cambias el correo o escribes tu nombre/apellidos de otra manera, el sistema podría identificarte como un usuario distinto y no mostrar todos tus registros anteriores. Si la visita es virtual, no se solicitará ubicación física.</div></div></article>
+      <article class="step"><div class="num">02</div><div><h3>Elige qué vas a registrar</h3><p>Selecciona el tipo de registro que corresponda: <strong>Observar clase, Observar sede, Voz del estudiante, Voz del docente u Otros hallazgos</strong>.</p><div class="note">Registra solo lo necesario. Puedes crear más de un registro durante la misma visita.</div></div></article>
+      <article class="step"><div class="num">03</div><div><h3>Completa la información</h3><p>Llena los campos que aparecen según el tipo de registro. Todos los campos obligatorios deben estar completos para continuar. Si corresponde identificar a una persona, usa <strong>Código / DNI</strong>.</p><div class="tips"><span class="tag red">Naturaleza</span><span class="tag">Qué observaste</span><span class="tag">Nota</span></div></div></article>
+      <article class="step"><div class="num">04</div><div><h3>Escribe o dicta tu nota</h3><p>Puedes escribir directamente o usar el micrófono para dictar. Si el navegador no tiene permiso de micrófono, Ruta SISE te mostrará un aviso para habilitarlo.</p><div class="note"><b>Consejo:</b> dicta frases cortas y claras. Revisa la transcripción antes de guardar.</div></div></article>
+      <article class="step"><div class="num">05</div><div><h3>Adjunta evidencias</h3><p>Puedes agregar fotos, documentos o audios. El registro continúa sin esperar la carga. Las evidencias se sincronizan en segundo plano y, si la conexión se interrumpe, se reintentan cuando vuelves a abrir Ruta SISE. Una vez sincronizadas, podrás consultarlas y descargarlas desde tu historial.</p><div class="tips"><span class="tag green">No bloquea la visita</span><span class="tag">Foto</span><span class="tag">Audio</span><span class="tag">Documento</span><span class="tag blue">Descargable</span></div></div></article>
+      <article class="step"><div class="num">06</div><div><h3>Revisa, decide si corresponde derivar y finaliza</h3><p>En <strong>Cierre</strong>, revisa cada hallazgo y selecciona la acción posterior que realmente corresponda. <strong>No todos los registros deben derivarse.</strong></p><div class="decision-grid"><div class="decision-card"><span class="decision-tag neutral">Solo registrar</span><p>Úsalo cuando el hallazgo solo necesita quedar documentado. <strong>No se deriva.</strong></p></div><div class="decision-card"><span class="decision-tag follow">Requiere seguimiento</span><p>Úsalo cuando otra persona o área debe revisar, responder o realizar una acción posterior. <strong>En este caso sí puedes derivar.</strong></p></div><div class="decision-card"><span class="decision-tag urgent">Escalar como incidencia</span><p>Úsalo cuando el hallazgo requiere atención prioritaria o urgente. <strong>Debe derivarse al responsable correspondiente.</strong></p></div></div><div class="note"><b>Antes de finalizar:</b> verifica que la recurrencia y la acción posterior sean correctas. El botón <b>Derivar</b> solo debe utilizarse para casos con seguimiento o escalamiento; si elegiste <b>Solo registrar</b>, simplemente finaliza la visita.</div><div class="note"><b>Finalizar visita</b> permanece disponible aunque existan evidencias que todavía estén sincronizándose.</div></div></article>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Qué hago si no funciona el micrófono?</summary><p>Revisa los permisos del navegador. Debes permitir el acceso al micrófono para Ruta SISE. Si está bloqueado, habilítalo desde la configuración del sitio y vuelve a intentar.</p></details>
+    <details><summary>¿Puedo cerrar la visita si una evidencia aún está cargando?</summary><p>Sí. La evidencia se sincroniza en segundo plano. Si no termina antes de cerrar el navegador, se conserva localmente y se reintenta cuando vuelvas a abrir Ruta SISE.</p></details>
+    <details><summary>¿Cuándo uso “Otros hallazgos”?</summary><p>Úsalo solo para situaciones relevantes que no correspondan a Observar clase, Observar sede, Voz del estudiante o Voz del docente.</p></details>
+    <details><summary>¿Cuándo debo usar el botón Derivar?</summary><p>Solo cuando la acción posterior sea <strong>Requiere seguimiento</strong> o <strong>Escalar como incidencia</strong>. Si el hallazgo se selecciona como <strong>Solo registrar</strong>, no debe derivarse: basta con conservar el registro y finalizar la visita.</p></details>
+    <details><summary>¿Dónde veo mis registros?</summary><p>Ingresa a <strong>Mi historial</strong>. Allí podrás revisar tus visitas y registros anteriores. Para que aparezca todo tu historial, debes identificarte siempre con el <strong>mismo correo, nombre y apellidos</strong>.</p></details>
+    <details><summary>¿Puedo descargar mis registros?</summary><p>Sí. Desde <strong>Mi historial</strong> puedes descargar tus registros disponibles para conservarlos, revisarlos o compartirlos cuando corresponda.</p></details>
+    <details><summary>¿Puedo descargar mis evidencias?</summary><p>Sí. Cuando la evidencia ya terminó de sincronizarse, podrás abrirla o descargarla desde el historial del registro correspondiente.</p></details>
+    <details><summary>¿Qué pasa si uso otro correo o cambio mi nombre?</summary><p>Ruta SISE puede interpretarlo como una identificación diferente. Por eso, utiliza siempre el mismo correo y escribe tu nombre y apellidos de la misma manera para mantener todo tu historial asociado.</p></details>
+  </section>
+
+  <section class="final">
+    <div><h2>Registra solo lo necesario</h2><p>Observa, escucha, registra y deriva cuando realmente corresponda. Ruta SISE busca facilitar el seguimiento y la mejora continua.</p></div>
+    <button class="btn" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+  </section>
+
+  <div class="footer">RUTA SISE · Manual rápido de usuario · Instituto SISE</div>
+</main>
+</body>
+</html>
